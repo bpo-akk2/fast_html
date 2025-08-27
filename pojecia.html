@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podstawowe pojęcia w Świecie AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .card-gradient {
+            background: linear-gradient(145deg, #1f2937, #111827);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white antialiased">
+
+    <!-- Main Container -->
+    <div class="container mx-auto px-4 py-12 md:py-20">
+
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">Podstawowe pojęcia w Świecie AI</h1>
+            <p class="text-lg md:text-xl text-gray-400">Kluczowe koncepcje, które warto znać, pracując z modelami językowymi.</p>
+        </header>
+
+        <!-- Grid for Concepts -->
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Card 1: Prompt Systemowy -->
+            <div class="card-gradient p-6 rounded-2xl shadow-lg border border-gray-700 border-t-2 border-t-violet-400 flex flex-col transition-transform transform hover:scale-105">
+                <div class="flex items-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-violet-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                    </svg>
+                    <h2 class="text-2xl font-semibold">Prompt Systemowy</h2>
+                </div>
+                <p class="text-gray-300 flex-grow">Zestaw wstępnych instrukcji nadających modelowi AI "osobowość", rolę i cel. Określa, jak AI ma się zachowywać, w jakim tonie odpowiadać i jakich zasad przestrzegać.</p>
+            </div>
+
+            <!-- Card 2: Okno Kontekstowe -->
+            <div class="card-gradient p-6 rounded-2xl shadow-lg border border-gray-700 border-t-2 border-t-sky-400 flex flex-col transition-transform transform hover:scale-105">
+                <div class="flex items-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-sky-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 1v4m0 0h-4m4 0l-5-5" />
+                    </svg>
+                    <h2 class="text-2xl font-semibold">Okno Kontekstowe</h2>
+                </div>
+                <p class="text-gray-300 flex-grow">To "pamięć robocza" modelu, obejmująca tekst rozmowy oraz załączone pliki. Większe okno pozwala na analizę większych plików i dłuższych konwersacji.</p>
+            </div>
+            
+            <!-- Card 3: Halucynacje -->
+            <div class="card-gradient p-6 rounded-2xl shadow-lg border border-gray-700 border-t-2 border-t-emerald-400 flex flex-col transition-transform transform hover:scale-105">
+                <div class="flex items-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-emerald-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01M12 6v-1m0 1H9.5M12 6h2.5m-2.5 0V3.5M12 3.5h2.5m-2.5 0H9.5M7 16l1.5-1.5M17 16l-1.5-1.5M9 12l-1.5-1.5M15 12l1.5-1.5" />
+                    </svg>
+                    <h2 class="text-2xl font-semibold">Halucynacje</h2>
+                </div>
+                <p class="text-gray-300 flex-grow">Zjawisko, w którym model AI generuje informacje, które wydają się prawdziwe, ale są fałszywe lub nieoparte na faktach. To jak pewne siebie opowiadanie o czymś, co nigdy się nie wydarzyło.</p>
+            </div>
+
+            <!-- Card 4: Token -->
+            <div class="card-gradient p-6 rounded-2xl shadow-lg border border-gray-700 border-t-2 border-t-amber-400 flex flex-col transition-transform transform hover:scale-105">
+                <div class="flex items-center mb-4">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-amber-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.5L15.232 5.232z" />
+                    </svg>
+                    <h2 class="text-2xl font-semibold">Token</h2>
+                </div>
+                <p class="text-gray-300 flex-grow">Podstawowa jednostka "myślenia" dla modelu. Może to być słowo, jego część lub znak. Modele "widzą" tekst jako ciąg tokenów, co jest kluczowe dla limitów i kosztów API.</p>
+            </div>
+            
+            <!-- Card 5: Modele z rozumowaniem -->
+            <div class="card-gradient p-6 rounded-2xl shadow-lg border border-gray-700 border-t-2 border-t-rose-400 flex flex-col transition-transform transform hover:scale-105">
+                <div class="flex items-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-rose-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                    </svg>
+                    <h2 class="text-2xl font-semibold">Modele z rozumowaniem</h2>
+                </div>
+                <p class="text-gray-300 flex-grow">Zaawansowane modele AI, które potrafią nie tylko generować tekst, ale także analizować problem, rozkładać go na kroki i dochodzić do rozwiązania. Naśladują ludzki proces myślowy.</p>
+            </div>
+
+            <!-- Card 6: Gemy (Agenci) -->
+            <div class="card-gradient p-6 rounded-2xl shadow-lg border border-gray-700 border-t-2 border-t-cyan-400 flex flex-col transition-transform transform hover:scale-105">
+                <div class="flex items-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-cyan-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+                    </svg>
+                    <h2 class="text-2xl font-semibold">Gemy (Agenci)</h2>
+                </div>
+                <p class="text-gray-300 flex-grow">Wyspecjalizowane "mini-aplikacje" AI, które automatyzują zadania. Idealnie sprawdzają się w organizacji projektów, analizie danych czy jako inteligentni pomocnicy wspierający podejmowanie decyzji.</p>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
